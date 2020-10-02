@@ -1,0 +1,114 @@
+   
+/*This is how we sytle elemets, Choose selector and them choose 
+it's properties*/
+
+/*Selector {
+	Proprrty: value;
+}*/ 
+
+/*The star symbolyze all the attributes on the file*/
+*{
+	text-align: right ;
+}/*but you can over write on the star and it will no effect*/
+
+/*there are a few ways to give style to our html file
+the right way is by making a css file and manage the style from
+that file and NOT to give the styles on the html file
+aldo we can.*/
+body { /*we order the css file from top to button on the html file,
+ in the body
+we can put attributes that effect the all page like background image */ 
+	  background-image: url(https://cdn.pixabay.com/photo/2018/05/10/08/59/book-3387071_1280.jpg); 
+	  background-size: cover; /*this attribute rules on the background shape*/ 
+}
+/*lets try style out headline by following what we learn*/ 
+h2 { /*This is the selecor*/
+	color: red; /*This is the attribute we give to the selector*/
+	cursor: pointer; /* add pointer when hover the selector */ 
+	text-align: center;
+}
+
+/*IMPORTANT!!!!!!
+WE MUST CONNECT THE STYLE.CSS FILE TO OUR HTML FILE FOR THIS TO
+WORK, THE FILES MUST BE ON THE SAME FOLDER.
+GO TO THE HTML FILE TO SEE HOW WE CONNECT THE STYLE TO THE HTML.
+WE CAN MAKE A CSS FILE FOR ANY HTML PAGE AND WE CAN CONNECT SEVERAL
+HTML FILES TO THE SAME CSS FILE.
+*/
+
+p {
+	color: pink;
+}
+
+p {
+	color: green;/*The last selector is the one that matters
+	when we have the same selector more then once*/
+}
+
+/*Now we learn about important properties.*/
+
+p {
+	color: red;
+	text-align: center; /*this property will put the text on the
+	center, we can choose canter, right, left and more.*/
+	border: 5px solid purple; /*this porperty will make border around the
+	element, px is how thick the border will be and the string
+	attribute is what kind of border it will be.
+	soild, dashed and more... and we can add after the kind
+	of the border also color*/
+
+}
+
+/* JUMP TO BUDY TO SEE BACKGROUND ATTRIBUTE */ 
+
+/* Style list: */ 
+li{
+	list-style: none; /* removing the bullets near to the list */
+	display:  inline ; /* put the list on the same line */ 
+}
+
+/* THE NEXT LINES TALK ABOUT CLASS ATTRIBUTE AND SHOW EXEMPELE
+FOR CLASS THAT CALLED .webtext 
+(we put a . brfore writing the name of the class) */
+
+.webtext{ /* this is CLASS element we gave to the p
+elements, every attribute we put here
+effect the group of that class */ 
+	color: black;
+	border: dashed 2px black;
+}
+
+.active{ /* this will effect only the class call webtext active */ 
+	color: red;
+	border: solid 4px blue;
+}
+
+/* THE NEXT LINES TALK ABOUT ID ATTRIBUTE AND SHOW EXEMPELE
+FOR ID THAT CALLED #div1,
+we use the div element to wrap Area and give that div id with name
+ID IS SIMILAR TO CLASS EXEPT FOR YOU CAN USE THE SAME ID ONLY ONCE!
+we put # before we write the name of the id  */
+
+#div1{
+	background: blue;
+}
+
+#p1{
+	color: yellow;
+	background: black;
+	border: solid 1px white;
+}
+
+#div2{ /* Here we will se some font attributes on specefic paragraph with the id div2*/
+	background: none;
+	color: black  ;
+	border: none;
+	text-decoration: underline; /* line under the text*/
+	text-transform: uppercase; /* make all the latters capital */
+	line-height: 30px; /* line between the rows*/
+	font-style: italic;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;  ;
+
+	}
